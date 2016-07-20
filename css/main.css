@@ -1,0 +1,224 @@
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}*/
+
+body {
+    background-color: rgba(5, 5, 5, 0.1) !important;
+}
+
+div {
+    text-align: center;
+}
+#header{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: #333333;
+    
+}
+
+
+.animation-fadeOpa {
+    -webkit-animation-name: animatebottom2;
+    -webkit-animation-duration: 10s;
+    animation-name: animatebottom2;
+    animation-duration: 10s
+}
+
+.text1 {
+    /*ข้อความ Wutibank*/
+    padding: 20px;
+    color: white;
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.text2 {
+    /*ข้อความ กลอน*/
+    padding-top: 25%;
+    padding-bottom: 25%;
+    color: dimgray;
+    font-size: 20px; /* Some tweener fallback that doesn't look awful */ 
+    font-size: 3.55vw;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+/* Center the loader */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #5d5d56;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 4s;
+    animation-name: animatebottom;
+    animation-duration: 4s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom2 {
+    from {
+        bottom: auto;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes animatebottom2 {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom2 {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+
+/*mouse horver image zoom*/
+
+.imagelogo {
+    max-width:  width: 100%;
+    max-height:  height: 100%;
+    height: auto !important;
+    margin: 5px 5px;
+}
+
+.imagelogo img {
+    -webkit-transition: all 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: all 1s ease;
+    /* Firefox */
+    -ms-transition: all 1s ease;
+    /* IE 9 */
+    -o-transition: all 1s ease;
+    /* Opera */
+    transition: all 1s ease;
+}
+
+.imagelogo:hover img {
+    -webkit-transform: scale(1.15);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.15);
+    /* Firefox */
+    -ms-transform: scale(1.15);
+    /* IE 9 */
+    -o-transform: scale(1.15);
+    /* Opera */
+    transform: scale(1.15);
+}
+
+#container-custom1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 20px;
+    
+}
+
+
+/*
+image background
+div.container1{
+    background-image: url(/image/pexels-photo-115062-large.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    
+padding: 80%;
+    
+}*/
+
+#header1 {
+    
+}
